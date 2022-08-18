@@ -11,11 +11,11 @@
 #. concat input including index into the empty string
 #. print variable containing the new string reversed
 
-# item_to_reverse = ''
-# word = input('Enter a word: ')
-# for i in range(len(word) - 1, - 1, - 1):
-#     item_to_reverse += (word[i])
-# print(item_to_reverse)
+item_to_reverse = ''
+word = input('Enter a word: ')
+for i in range(len(word) - 1, - 1, - 1):
+    item_to_reverse += (word[i])
+print(item_to_reverse)
 
 
 # Task 2 capitalized letter
@@ -23,6 +23,12 @@
 #. ask user for a string of two or more words
 #. create a for loop to go through each index and capitalize first letter of each word
 #. apply range to the len of the word to go 1 by 1 'til the end
+#. employ conditionals to determine which letter needs to be capitalized
+#. if index is equal to 0 or an space it needs to be capitalized
+#. acces to the space between letter substracting 1 to the index
+#. use else to print the letter that don't require modifications
+#. print outside the loop the capilized words
+
 
 cap_words = ''
 words_to_cap = input('Enter two or more words: ')
@@ -31,9 +37,9 @@ for i in range(0, len(words_to_cap), 1):
         a = words_to_cap[i].capitalize()
         cap_words += a
     elif words_to_cap[i - 1] == ' ':
-        c = words_to_cap[i].capitalize()
-        cap_words += c
-    else:
-        b = words_to_cap[i]
+        b = words_to_cap[i].capitalize()
         cap_words += b
+    else:
+        c = words_to_cap[i]
+        cap_words += c
 print(cap_words)
