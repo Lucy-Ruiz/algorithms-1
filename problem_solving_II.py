@@ -17,6 +17,7 @@ def reverse_string(word):
     for i in range(len(word) - 1, - 1, - 1):
         item_reversed += (word[i])
     print(item_reversed)
+    print('hello')
     return item_reversed
 
 reverse_string()
